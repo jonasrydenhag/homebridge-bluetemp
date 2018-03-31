@@ -7,7 +7,7 @@ var blueTemp = require('/srv/blueTemp');
 module.exports = function (homebridge) {
   Service = homebridge.hap.Service;
   Characteristic = homebridge.hap.Characteristic;
-  homebridge.registerAccessory("homebridge-blue-temp", "BlueTemp", BlueTemp);
+  homebridge.registerAccessory("homebridge-bluetemp", "BlueTemp", BlueTemp);
 };
 
 function BlueTemp(log, config) {
