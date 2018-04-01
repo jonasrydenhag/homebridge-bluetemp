@@ -19,7 +19,7 @@ BlueTemp.prototype = {
   getState: function (callback) {
     blueTemp.read()
       .then(function (temperature) {
-        callback(null, { temperature: temperature });
+        callback(null, temperature.temperature);
       })
       .catch(function (err) {
         callback(err || new Error('Cannot get sensor data'), null)
